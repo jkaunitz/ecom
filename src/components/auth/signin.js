@@ -3,10 +3,15 @@ import React, { Component } from 'react';
 import SignInForm from './signinForm';
 
 class SignIn extends Component {
+
+    onSubmit = (fields) => {
+        console.log(fields);
+    }
+
     render() {
         return (
             <div className='sign-in'>
-                <SignInForm clasName='sign-in__form' />
+                <SignInForm onSubmit={this.onSubmit} clasName='sign-in__form' />
             </div>
         )
     }
