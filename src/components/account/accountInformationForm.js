@@ -15,6 +15,7 @@ class AccountInformationForm extends Component {
             showPasswords: false
         }
     }
+    
     render() {
         const { className, handleSubmit } = this.props;
 
