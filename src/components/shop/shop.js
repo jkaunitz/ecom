@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import ShopSearchBar from './shopSearchBar';
 
 class Shop extends Component {
 
@@ -27,11 +28,15 @@ class Shop extends Component {
         return true
     }
 
+    onSubmit = (fields) => {
+        console(fields);
+    }
+
     render() {
         
         return (
             <div className='shop'>
-                {/* shop search bar */}
+                <ShopSearchBar onSubmit={this.onSubmit} clasName='shop__search-bar'/>
                 <div className='shop__products'>
                 {
                     this.props.filteredProducts.map(product => {
