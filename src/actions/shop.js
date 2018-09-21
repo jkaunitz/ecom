@@ -64,7 +64,7 @@ export function fetchShopProducts() {
         payload: [
             {
                 _id: 0,
-                title: 'Javaswcript in the Browser',
+                title: 'JavaScript in the Browser',
                 description: 'The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 ...',
                 price: 1.99,
                 belongsTo: [0, 1]
@@ -92,7 +92,7 @@ export function fetchShopProducts() {
             },
             {
                 _id: 4,
-                title: 'Javaswcript Development',
+                title: 'JavaScript Development',
                 description: 'The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 ...',
                 price: 1.99,
                 belongsTo: [0, 1]
