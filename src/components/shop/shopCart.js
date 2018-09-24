@@ -47,10 +47,10 @@ class ShopCart extends Component {
     }
 
     handleAddToCart = () => {
-        if(documnent.getElementById('shop-cart').classList.contains('cart-hidden')) {
-            documnent.getElementById('shop-cart').classList.remove('cart-hidden');
+        if(document.getElementById('shop-cart').classList.contains('cart-hidden')) {
+            document.getElementById('shop-cart').classList.remove('cart-hidden');
         } else {
-            documnent.getElementById('shop-cart').classList.add('cart-hidden')
+            document.getElementById('shop-cart').classList.add('cart-hidden')
         }
     }
 
@@ -66,7 +66,7 @@ class ShopCart extends Component {
 }
 
 function mapStateToProps(state) {
-    const { CartProduct } = state.user;
+    const { cartProducts } = state.user;
     return {
         cartProducts
     }
